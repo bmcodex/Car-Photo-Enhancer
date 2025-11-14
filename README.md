@@ -1,84 +1,86 @@
 # 🚗 Car Photo Enhancer
 
-> Professional Photo Editing for Car Photography
+> **Professional Photo Editing for Car Photography**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/bmcodex/Car-Photo-Enhancer?style=social)](https://github.com/bmcodex/Car-Photo-Enhancer)
 [![GitHub Forks](https://img.shields.io/github/forks/bmcodex/Car-Photo-Enhancer?style=social)](https://github.com/bmcodex/Car-Photo-Enhancer)
+[![Commits](https://img.shields.io/badge/Commits-53-blue)](https://github.com/bmcodex/Car-Photo-Enhancer/commits/main)
 
-## 📸 Overview
+---
 
-**Car Photo Enhancer** is a powerful web-based photo editing application specifically designed for car photography. It combines professional editing tools with an intuitive Instagram-style interface, making it easy for anyone to create stunning car photos.
+## 🌐 Select Language / Wybierz Język
 
-Whether you're a car dealer, photographer, enthusiast, or content creator, Car Photo Enhancer provides everything you need to enhance your car photos with professional-grade filters and editing tools.
+<div align="center">
 
-## ✨ Key Features
+### **[📖 English Documentation](README_EN.md)** | **[📖 Dokumentacja Polska](README_PL.md)**
 
-### 🎨 5 Professional Presets
+</div>
 
-Each preset is carefully crafted for specific car photography scenarios:
+---
 
-- **✨ Gloss** - High shine with bright highlights for a polished, showroom-ready look
-- **🔷 Metallic Reflection** - Reflective surface effects perfect for metallic paint finishes
-- **🎨 Deep Paint** - Rich, saturated colors that make your car's paint pop
-- **🌃 Night Neon** - Dramatic neon glow effects for creative night photography
-- **⚙️ Wheel Detail Enhancer** - Sharpness and contrast boost for stunning wheel details
+## 📊 Project Statistics
 
-### 🛡️ Advanced Editing Tools
+<div align="center">
 
-#### License Plate Blurring
-- Automatic detection of license plate areas
-- Adjustable blur radius (5-50px)
-- Real-time preview with area indicators
-- Privacy protection for shared photos
+| Metric | Value |
+|--------|-------|
+| **Total Commits** | 53 🎯 |
+| **Documentation Files** | 15+ 📚 |
+| **React Components** | 7+ ⚛️ |
+| **Photo Presets** | 5 🎨 |
+| **Editing Tools** | 7 🛠️ |
+| **Lines of Code** | 5000+ 💻 |
+| **License** | MIT 📄 |
+| **Repository** | GitHub 🔗 |
 
-#### Reflection & Glare Removal
-- Intelligent reflection detection algorithm
-- Adjustable intensity (0-100%)
-- Preserves image quality while reducing unwanted reflections
-- Perfect for photos taken in bright sunlight
+</div>
 
-#### Color Correction
-- **Brightness**: Adjust lighting (-50 to +50)
-- **Contrast**: Enhance definition and drama (-50 to +50)
-- **Saturation**: Control color intensity (-50 to +100)
-- **Temperature**: Warm/cool white balance adjustment
-- Real-time preview of all adjustments
+---
 
-#### Before/After Comparison
-- Interactive slider for side-by-side comparison
-- Drag to compare different areas
-- Touch-friendly on mobile devices
-- Perfect for verifying your edits
+## ✨ Key Features at a Glance
 
-### 🎬 Instagram-Style Interface
+### 🎨 **5 Professional Presets**
+- ✨ **Gloss** - High shine with bright highlights
+- 🔷 **Metallic Reflection** - Reflective surface effects
+- 🎨 **Deep Paint** - Rich, saturated colors
+- 🌃 **Night Neon** - Dramatic neon glow effects
+- ⚙️ **Wheel Detail Enhancer** - Sharpness & contrast boost
 
-- Clean, intuitive design inspired by Instagram
-- Smooth animations and transitions
-- Responsive layout for all devices
-- Dark and light theme support
-- Drag-and-drop photo upload
+### 🛡️ **Advanced Editing Tools**
+- 🚫 License Plate Blurring (automatic detection)
+- ✨ Reflection & Glare Removal
+- 🎨 Color Correction (brightness, contrast, saturation)
+- 📊 Before/After Comparison Slider
+- 📜 Edit History with Undo
+- 💾 High-Quality Export (JPEG)
 
-### 📊 Edit History & Undo
+### 🎬 **Instagram-Style Interface**
+- Clean, intuitive design
+- Smooth animations & transitions
+- Responsive layout (mobile, tablet, desktop)
+- Dark & light theme support
+- Drag-and-drop file upload
 
-- Track all applied edits
-- Undo functionality to revert changes
-- Visual indication of edit count
-- Non-destructive editing
+---
 
-### 💾 High-Quality Export
+## 🛠️ Technology Stack
 
-- Download edited photos in JPEG format
-- Adjustable quality settings
-- Optimized file sizes
-- Timestamp-based filenames
+```
+Frontend:        React 19 + TypeScript + Tailwind CSS 4 + Vite
+Backend:         Express.js + Node.js + tRPC
+Database:        MySQL/TiDB + Drizzle ORM
+Image Processing: Canvas API (GPU-accelerated)
+```
 
-## 🚀 Getting Started
+---
 
-### Quick Start (5 Minutes)
+## 🚀 Quick Start
+
+### Installation (5 minutes)
 
 ```bash
-# 1. Clone the repository
+# 1. Clone repository
 git clone https://github.com/bmcodex/Car-Photo-Enhancer.git
 cd Car-Photo-Enhancer
 
@@ -87,7 +89,6 @@ pnpm install
 
 # 3. Configure environment
 cp .env.example .env.local
-# Edit .env.local with your settings
 
 # 4. Setup database
 pnpm db:push
@@ -96,159 +97,42 @@ pnpm db:push
 pnpm dev
 ```
 
-Visit `http://localhost:3000` in your browser.
+Visit: **http://localhost:3000**
 
 ### First Edit
 
-1. Sign in with your account
+1. Sign in to your account
 2. Upload a car photo (JPEG, PNG, or WebP)
 3. Select a preset or adjust filters manually
 4. Use before/after comparison to verify changes
 5. Download your enhanced photo
 
-## 📋 System Requirements
-
-### Minimum
-- Node.js 18+
-- 512 MB RAM
-- 500 MB storage
-- Modern web browser
-
-### Recommended
-- Node.js 20+
-- 2+ GB RAM
-- 2+ GB storage
-- Chrome, Firefox, Safari, or Edge (latest versions)
-
-## 🛠️ Technology Stack
-
-### Frontend
-- **React 19** - Modern UI framework
-- **TypeScript** - Type-safe development
-- **Tailwind CSS 4** - Utility-first styling
-- **tRPC** - Type-safe API calls
-- **Vite** - Lightning-fast build tool
-
-### Backend
-- **Express.js** - Web framework
-- **Node.js** - JavaScript runtime
-- **tRPC** - Type-safe RPC framework
-- **Drizzle ORM** - Type-safe database ORM
-
-### Database
-- **MySQL/TiDB** - Relational database
-- **Drizzle Kit** - Database migrations
-
-### Image Processing
-- **Canvas API** - Hardware-accelerated image manipulation
-- **HTML5** - Modern web standards
+---
 
 ## 📁 Project Structure
 
 ```
 car-photo-enhancer/
-├── client/                      # Frontend application
-│   ├── src/
-│   │   ├── components/         # React components
-│   │   │   ├── PhotoEditor.tsx
-│   │   │   ├── PhotoUploader.tsx
-│   │   │   ├── LicensePlateBurrer.tsx
-│   │   │   ├── ReflectionRemover.tsx
-│   │   │   ├── ColorCorrection.tsx
-│   │   │   ├── BeforeAfterSlider.tsx
-│   │   │   └── AdvancedEditor.tsx
-│   │   ├── pages/              # Page components
-│   │   ├── hooks/              # Custom React hooks
-│   │   ├── utils/              # Utility functions
-│   │   └── App.tsx             # Main application
-│   ├── public/                 # Static assets
-│   └── index.html              # HTML template
-│
-├── server/                      # Backend application
-│   ├── db.ts                   # Database queries
-│   ├── routers.ts              # tRPC procedures
-│   └── _core/                  # Core framework
-│
-├── shared/                      # Shared code
-│   ├── presets.ts              # Filter presets
-│   ├── constants.ts            # Application constants
-│   ├── types.ts                # TypeScript types
-│   └── imageProcessing.ts      # Image utilities
-│
-├── drizzle/                     # Database
-│   ├── schema.ts               # Database schema
-│   └── migrations/             # Database migrations
-│
-└── docs/                        # Documentation
-    ├── FEATURES.md
-    ├── INSTALLATION.md
-    ├── USAGE.md
-    └── ARCHITECTURE.md
+├── client/                    # Frontend (React)
+│   ├── src/components/       # UI Components
+│   ├── src/pages/            # Page Components
+│   ├── src/hooks/            # Custom Hooks
+│   └── src/utils/            # Utilities
+├── server/                    # Backend (Express)
+│   ├── db.ts                 # Database Queries
+│   └── routers.ts            # tRPC Procedures
+├── shared/                    # Shared Code
+│   ├── presets.ts            # Filter Presets
+│   ├── constants.ts          # Constants
+│   └── types.ts              # TypeScript Types
+├── drizzle/                   # Database
+│   └── schema.ts             # Database Schema
+└── docs/                      # Documentation
 ```
 
-## 📖 Documentation
+---
 
-Comprehensive documentation is available:
-
-- **[FEATURES.md](FEATURES.md)** - Detailed feature descriptions
-- **[INSTALLATION.md](INSTALLATION.md)** - Installation and setup guide
-- **[USAGE.md](USAGE.md)** - User guide and tutorials
-- **[ARCHITECTURE.md](ARCHITECTURE.md)** - System architecture and design
-- **[API_DOCUMENTATION.md](API_DOCUMENTATION.md)** - API reference
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
-- **[QUICK_START.md](QUICK_START.md)** - Quick start guide
-
-## 🎯 Use Cases
-
-### 👨‍💼 Car Dealers
-Enhance vehicle photos for listings and increase buyer interest
-
-### 📸 Photographers
-Professional car photo editing with powerful tools
-
-### 🚗 Enthusiasts
-Share stunning car photos on social media
-
-### 🏢 Insurance Companies
-Document vehicle conditions with clarity
-
-### 🚕 Rental Companies
-Create professional fleet photos
-
-## 🔒 Privacy & Security
-
-- **Client-Side Processing**: All image processing happens in your browser
-- **No Server Storage**: Photos are not stored on our servers
-- **Secure Authentication**: OAuth 2.0 with Manus
-- **HTTPS Encryption**: All data is encrypted in transit
-- **License Plate Privacy**: Automatic blurring for sensitive information
-- **GDPR Compliant**: Full compliance with data protection regulations
-
-## 🚀 Performance
-
-- **Sub-second Filter Application**: Instant feedback on adjustments
-- **Smooth 60fps Animations**: Fluid user experience
-- **Optimized Bundle Size**: Fast initial load
-- **Hardware Acceleration**: GPU-accelerated image processing
-- **Efficient Memory Usage**: Handles high-resolution images
-
-## 🎨 Workflow
-
-```
-1. Upload Photo
-    ↓
-2. Choose Preset (or manual adjustments)
-    ↓
-3. Fine-tune Filters
-    ↓
-4. Remove Sensitive Info (blur plates)
-    ↓
-5. Compare Before/After
-    ↓
-6. Download Enhanced Photo
-```
-
-## 📊 Supported Formats
+## 📊 Supported Image Formats
 
 | Format | Extension | Quality | Notes |
 |--------|-----------|---------|-------|
@@ -256,40 +140,81 @@ Create professional fleet photos
 | PNG    | .png      | Lossless| Larger files |
 | WebP   | .webp     | High    | Modern format |
 
-**Maximum file size**: 50 MB
+**Maximum file size:** 50 MB
 
-## 🔧 Development
+---
 
-### Available Commands
+## 🔧 Available Commands
 
 ```bash
-# Start development server
-pnpm dev
-
-# Type checking
-pnpm type-check
-
-# Build for production
-pnpm build
-
-# Start production server
-pnpm start
-
-# Database migrations
-pnpm db:push
-pnpm db:generate
-
-# Clean build artifacts
-pnpm clean
+pnpm dev              # Start development server
+pnpm type-check       # TypeScript checking
+pnpm build            # Build for production
+pnpm start            # Start production server
+pnpm db:push          # Database migrations
+pnpm db:generate      # Generate database types
+pnpm clean            # Clean build artifacts
 ```
 
-### Development Workflow
+---
 
-1. Make changes to source files
-2. Changes auto-reload in browser
-3. Type checking runs automatically
-4. Test your changes
-5. Commit with descriptive message
+## 🎯 Use Cases
+
+- 👨‍💼 **Car Dealers** - Enhance vehicle photos for listings
+- 📸 **Photographers** - Professional car photo editing
+- 🚗 **Enthusiasts** - Share stunning car photos on social media
+- 🏢 **Insurance Companies** - Document vehicle conditions
+- 🚕 **Rental Companies** - Create professional fleet photos
+
+---
+
+## 🔒 Privacy & Security
+
+- ✅ Client-side image processing (no server uploads)
+- ✅ OAuth 2.0 authentication (Manus)
+- ✅ HTTPS encryption for all data
+- ✅ Automatic license plate blurring
+- ✅ GDPR compliant
+- ✅ No photo storage on servers
+
+---
+
+## 🚀 Performance Metrics
+
+- ⚡ Filter application: < 500ms
+- 🎬 Smooth 60fps animations
+- 📦 Optimized bundle size
+- 🖥️ GPU-accelerated processing
+- 💾 Efficient memory management
+
+---
+
+## 📚 Documentation
+
+Complete documentation is available in two languages:
+
+### 📖 **Full Documentation**
+- **[README_EN.md](README_EN.md)** - English Version (388 lines)
+- **[README_PL.md](README_PL.md)** - Polish Version (388 lines)
+
+### 📋 **Additional Guides**
+- [FEATURES.md](FEATURES.md) - Detailed feature descriptions
+- [QUICK_START.md](QUICK_START.md) - 5-minute quick start
+- [INSTALLATION.md](INSTALLATION.md) - Installation guide
+- [USAGE.md](USAGE.md) - User guide & tutorials
+- [ARCHITECTURE.md](ARCHITECTURE.md) - System architecture
+- [API_DOCUMENTATION.md](API_DOCUMENTATION.md) - API reference
+- [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
+- [FAQ.md](FAQ.md) - Frequently asked questions
+- [ROADMAP.md](ROADMAP.md) - Product roadmap
+- [SECURITY.md](SECURITY.md) - Security guidelines
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Deployment guide
+- [TESTING.md](TESTING.md) - Testing guide
+- [PERFORMANCE.md](PERFORMANCE.md) - Performance optimization
+- [COMPLIANCE.md](COMPLIANCE.md) - Compliance & legal
+- [SUPPORT.md](SUPPORT.md) - Support resources
+
+---
 
 ## 🤝 Contributing
 
@@ -304,9 +229,13 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
+
+---
 
 ## 🙏 Acknowledgments
 
@@ -314,6 +243,8 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - **Tailwind Labs** - For Tailwind CSS
 - **tRPC Contributors** - For type-safe APIs
 - **Community** - For feedback and contributions
+
+---
 
 ## 📞 Support
 
@@ -324,6 +255,8 @@ Need help? Check out our resources:
 - 🐛 [Report a Bug](https://github.com/bmcodex/Car-Photo-Enhancer/issues)
 - 💡 [Request a Feature](https://github.com/bmcodex/Car-Photo-Enhancer/issues)
 - 📧 [Contact Support](SUPPORT.md)
+
+---
 
 ## 🗺️ Roadmap
 
@@ -352,37 +285,45 @@ Need help? Check out our resources:
 - Professional tools
 - Developer API
 
-## 📊 Statistics
+---
 
-- **50+ Git Commits** - Well-documented development history
-- **15+ Documentation Files** - Comprehensive guides
-- **5 Professional Presets** - Car-specific filters
-- **7 Advanced Tools** - Complete editing suite
-- **100% TypeScript** - Type-safe codebase
+## 📊 Project Highlights
 
-## 🎓 Learning Resources
+| Category | Details |
+|----------|---------|
+| **Language** | TypeScript (100%) |
+| **Frontend Framework** | React 19 |
+| **Styling** | Tailwind CSS 4 |
+| **API** | tRPC (type-safe) |
+| **Database** | MySQL/TiDB |
+| **Image Processing** | Canvas API |
+| **Authentication** | OAuth 2.0 |
+| **Deployment** | Ready for production |
 
-This project demonstrates:
-
-- Modern React patterns and hooks
-- TypeScript best practices
-- tRPC for type-safe APIs
-- Tailwind CSS for responsive design
-- Canvas API for image processing
-- Database design with Drizzle ORM
-- Full-stack development
+---
 
 ## 🌟 Star Us!
 
 If you find this project helpful, please consider giving it a star ⭐
 
+---
+
 ## 📱 Connect With Us
 
-- GitHub: [@bmcodex](https://github.com/bmcodex)
-- Issues: [Report bugs and request features](https://github.com/bmcodex/Car-Photo-Enhancer/issues)
+- **GitHub:** [@bmcodex](https://github.com/bmcodex)
+- **Repository:** [Car-Photo-Enhancer](https://github.com/bmcodex/Car-Photo-Enhancer)
+- **Issues:** [Report bugs and request features](https://github.com/bmcodex/Car-Photo-Enhancer/issues)
 
 ---
 
-**Made with ❤️ by the Car Photo Enhancer Team**
+<div align="center">
+
+### **Made with ❤️ by the Car Photo Enhancer Team**
 
 *Enhancing car photos, one preset at a time.*
+
+---
+
+**[📖 English Documentation](README_EN.md)** | **[📖 Dokumentacja Polska](README_PL.md)**
+
+</div>
