@@ -25,4 +25,30 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+export const photos = mysqlTable("photos", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull(),
+  originalImageUrl: text("originalImageUrl").notNull(),
+  editedImageUrl: text("editedImageUrl"),
+  presetName: varchar("presetName", { length: 64 }),
+  title: varchar("title", { length: 255 }),
+  description: text("description"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Photo = typeof photos.$inferSelect;
+export type InsertPhoto = typeof photos.$inferInsert;
+
+export const editHistory = mysqlTable("editHistory", {
+  id: int("id").autoincrement().primaryKey(),
+  photoId: int("photoId").notNull(),
+  userId: int("userId").notNull(),
+  presetName: varchar("presetName", { length: 64 }).notNull(),
+  filters: text("filters"), // JSON string with filter settings
+  editedImageUrl: text("editedImageUrl"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type EditHistory = typeof editHistory.$inferSelect;
+export type InsertEditHistory = typeof editHistory.$inferInsert;
