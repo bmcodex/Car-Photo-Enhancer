@@ -175,3 +175,32 @@
     }
   }
 }
+
+@layer utilities {
+  .instagram-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .smooth-shadow {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  .smooth-shadow-lg {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  }
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .before-after-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
