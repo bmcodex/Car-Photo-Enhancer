@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/bmcodex/Car-Photo-Enhancer?style=social)](https://github.com/bmcodex/Car-Photo-Enhancer)
 [![GitHub Forks](https://img.shields.io/github/forks/bmcodex/Car-Photo-Enhancer?style=social)](https://github.com/bmcodex/Car-Photo-Enhancer)
-[![Commits](https://img.shields.io/badge/Commits-53-blue)](https://github.com/bmcodex/Car-Photo-Enhancer/commits/main)
+[![Commits](https://img.shields.io/badge/Commits-530-blue)](https://github.com/bmcodex/Car-Photo-Enhancer/commits/main)
 
 ---
 
