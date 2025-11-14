@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Loader2 } from 'lucide-react';
 import { APP_LOGO, APP_TITLE, getLoginUrl } from '@/const';
 import PhotoUploader from '@/components/PhotoUploader';
-import PhotoEditor from '@/components/PhotoEditor';
+import AdvancedEditor from '@/components/AdvancedEditor';
 
 export default function Home() {
   const { user, loading, isAuthenticated } = useAuth();
@@ -79,7 +79,7 @@ export default function Home() {
                 Back to Upload
               </Button>
             </div>
-            <PhotoEditor
+            <AdvancedEditor
               imageUrl={uploadedImage}
               onSave={(editedUrl, presetName) => {
                 console.log('Photo saved:', { editedUrl, presetName });
